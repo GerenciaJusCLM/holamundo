@@ -1,14 +1,15 @@
 ---
 - hosts: all
   become: true
-  blocks:
-  - name: Comprobar espacio en disco
-    task:
-      commands:
-        - echo "Verificando el espacio en disco en el sistema..."
-        - df -h --output=source,fstype,size,used,avail,pcent,target
+  tasks:
+    - name: Comprobar espacio en disco
+      shell: df -h --output=source,fstype,size,used,avail,pcent,target
+      register: disk_space_output
 
-  - name: Otro bloque de tareas (ejemplo)
-    task:
-      commands:
-        - echo "Aquí puedes agregar otros comandos o tareas"
+    - name: Mostrar espacio en disco
+      debug:
+        msg: "{{ disk_space_output.stdout }}"
+
+    - name: Otro bloque de tareas (ejemplo)
+      debug:
+        msg: "Aquí puedes agregar otros comandos o tareas"
