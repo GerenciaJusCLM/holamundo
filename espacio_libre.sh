@@ -2,4 +2,4 @@
 
 # Muestra el espacio en disco de todos los sistemas de archivos
 echo "Espacio en disco disponible en el sistema:"
-df -h | column -t
+df -h
