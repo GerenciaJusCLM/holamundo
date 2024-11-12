@@ -1,7 +1,7 @@
-version: v1.0
-name: Pipeline con Comprobación de Espacio en Disco
-
-blocks:
+---
+- hosts: all
+  become: true
+  blocks:
   - name: Comprobar espacio en disco
     task:
       commands:
