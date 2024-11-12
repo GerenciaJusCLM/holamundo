@@ -1,4 +1,3 @@
-version: v1.0
 name: Pipeline con Comprobación de Espacio en Disco
 
 blocks:
