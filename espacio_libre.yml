@@ -1,0 +1,14 @@
+version: v1.0
+name: Pipeline con Comprobación de Espacio en Disco
+
+blocks:
+  - name: Comprobar espacio en disco
+    task:
+      commands:
+        - echo "Verificando el espacio en disco en el sistema..."
+        - df -h --output=source,fstype,size,used,avail,pcent,target | column -t
+
+  - name: Otro bloque de tareas (ejemplo)
+    task:
+      commands:
+        - echo "Aquí puedes agregar otros comandos o tareas"
