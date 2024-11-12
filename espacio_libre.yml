@@ -10,6 +10,10 @@
       debug:
         msg: "{{ disk_space_output.stdout }}"
 
-    - name: Otro bloque de tareas (ejemplo)
-      debug:
-        msg: "Aquí puedes agregar otros comandos o tareas"
+    - name: Debug - Información de sistema
+      task:
+        commands:
+        - echo "Versión de sistema operativo:"
+        - uname -a
+        - echo "Comandos disponibles en el entorno:"
+        - compgen -c | sort
