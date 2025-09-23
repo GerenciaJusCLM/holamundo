@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   tasks:
-    - name: Comprobar espacio en disco en gigas github. Verificando sincronismo entre GILTAB Y GITHUB USANDO SSH
+    - name: Comprobar espacio en disco en gigas github. Verificando sincronismo entre GILTAB Y GITHUB 
       shell: df -h --output=source,fstype,size,used,avail,pcent,target | column -t
       register: disk_space_output
 
