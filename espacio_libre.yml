@@ -6,7 +6,7 @@
       shell: df -h --output=source,fstype,size,used,avail,pcent,target | column -t
       register: disk_space_output
 
-    - name: Mostrar espacio en disco
+    - name: Mostrar espacio en disco en gigas
       debug:
         msg: "{{ disk_space_output.stdout }}"
 
