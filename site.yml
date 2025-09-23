@@ -1,5 +1,5 @@
 --- 
-- name: Deploy Docker image Prueba github
+- name: Deploy Docker image Prueba integración gitlab  con github
   hosts: webserver
   tasks:
     - name: Pull Docker Image
