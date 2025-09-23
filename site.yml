@@ -1,5 +1,5 @@
 --- 
-- name: Deploy Docker image Prueba integración gitlab con githuh (SSH)
+- name: Deploy Docker image Prueba integración de gitlab y github con (SSH)
   hosts: webserver
   tasks:
     - name: Pull Docker Image
