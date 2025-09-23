@@ -1,4 +1,4 @@
---- Prueba 
+--- 
 - name: Deploy Docker image
   hosts: webserver
   tasks:
