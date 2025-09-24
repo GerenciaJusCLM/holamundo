@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   tasks:
-    - name: Comprobar espacio en disco en gigas github. Verificando sincronismo entre GILTAB Y GITHUB 
+    - name: Comprobar espacio en disco en gigas github. Mirroring GITLAB Y GITHUB. AÑADIDO SSH DE GITHUB EN GITLAB 
       shell: df -h --output=source,fstype,size,used,avail,pcent,target | column -t
       register: disk_space_output
 
