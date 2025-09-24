@@ -1,5 +1,5 @@
 --- 
-- name: Deploy Docker image Prueba integración con ssh y https
+- name: Deploy Docker image Prueba integración con ssh 
   hosts: webserver
   tasks:
     - name: Pull Docker Image
