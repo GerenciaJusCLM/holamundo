@@ -1,5 +1,5 @@
 --- 
-- name: Deploy Docker image Prueba integración con https. Probando mirroring con SSH
+- name: Deploy Docker image Prueba integración con https. Utilizo fine-grained token Acceso desde gitlab
   hosts: webserver
   tasks:
     - name: Pull Docker Image
