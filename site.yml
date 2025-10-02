@@ -1,5 +1,5 @@
 --- 
-- name: Deploy Docker image Prueba integración con bash 
+- name: Deploy Docker image Prueba integración en shell script y PTA
   hosts: webserver
   tasks:
     - name: Pull Docker Image
