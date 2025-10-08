@@ -1,5 +1,5 @@
 --- 
-- name: Deploy Docker image Prueba integración en shell script y PTA (Personal Token Access) como variable .env
+- name: Deploy Docker image Prueba integración en shell script y PTA (Personal Token Access) como variable .env y streamlit
   hosts: webserver
   tasks:
     - name: Pull Docker Image
