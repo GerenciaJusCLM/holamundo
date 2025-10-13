@@ -1,5 +1,5 @@
 --- 
-- name: Deploy Docker image Prueba integración en shell script y PTA (Personal Token Access) como variable .env y streamlit
+- name: Deploy Docker image Integración Gitlab->Github con streamlit (app2.py y mirror.sh)
   hosts: webserver
   tasks:
     - name: Pull Docker Image
